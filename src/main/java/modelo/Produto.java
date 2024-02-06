@@ -1,4 +1,4 @@
-package br.com.alura.comex;
+package modelo;
 
 public class Produto {
     private String nome;
@@ -6,33 +6,21 @@ public class Produto {
     private double precoUnitario;
     private int quantidade;
 
-    public String getNome() {
-        return nome;
-    }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
-
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
     public void setPrecoUnitario(double precoUnitario) {
         this.precoUnitario = precoUnitario;
     }
-
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
 
-    // Comparar quantidade dos produtos
-    boolean compararQuantidade(Produto outroProduto) {
-        return this.quantidade < outroProduto.quantidade;
-    }
-
     //Imprimir produtos
-    void imprimirProdutos(){
+    public void imprimirProdutos(){
         System.out.println("Nome: " + nome + "\nDescrição: " + descricao + "\nPreço Unitário: " + precoUnitario +
                 "\nQuantidade: " + quantidade + "\n");
     }

@@ -1,5 +1,4 @@
-package br.com.alura.comex;
-
+package modelo;
 public class Endereco {
     public String bairro;
     public String cidade;

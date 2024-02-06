@@ -1,6 +1,6 @@
-package br.com.alura.comex;
+package modelo;
 
-public class Cliente {
+public class Cliente extends Endereco {
     public String nome;
     public String cpf;
     public String email;

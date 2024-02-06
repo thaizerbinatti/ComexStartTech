@@ -1,5 +1,9 @@
 package br.com.alura.comex;
 
+import modelo.Cliente;
+import modelo.Endereco;
+import modelo.Produto;
+
 public class Atividades {
     public static void main(String[] args) {
 
@@ -18,12 +22,10 @@ public class Atividades {
 
 
         // Atividade 3
-        if (produto1.compararQuantidade(produto2)) {
-            System.out.println(produto1.getNome() + " tem menos produtos que " + produto2.getNome() + "\n");
-        } else if (produto2.compararQuantidade(produto1)) {
-            System.out.println(produto2.getNome() + " tem menos produtos que " + produto1.getNome() + "\n");
+        if (produto1.equals(produto2)) {
+            System.out.println("Os produtos são iguais! \n");
         } else {
-            System.out.println("Os produtos têm a mesma quantidade." + "\n");
+            System.out.println("Os produtos são diferentes! \n");
         }
 
         //Atividade 4
@@ -47,6 +49,7 @@ public class Atividades {
         cliente1.profissao = "Contadora";
         cliente1.telefone = "(11)3232-3434";
         cliente1.endereco = endereco1;
+
 
         cliente1.imprimirCliente();
         endereco1.imprimirEndereco();
