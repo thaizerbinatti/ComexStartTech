@@ -12,4 +12,16 @@ public class Cliente extends Endereco {
         System.out.println("Nome: " + nome + "\nCPF: " + cpf + "\nEmail: " + email + "\nProfissão: " + profissao
         + "\nTelefone: " + telefone + "\nEndereco: " + endereco + "\n");
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\n' +
+                ", cpf='" + cpf + '\n' +
+                ", email='" + email + '\n' +
+                ", profissao='" + profissao + '\n' +
+                ", telefone='" + telefone + '\n' +
+                ", endereco=" + endereco +
+                '}';
+    }
 }

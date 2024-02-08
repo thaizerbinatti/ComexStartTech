@@ -1,5 +1,7 @@
 package modelo;
 
+import java.math.BigDecimal;
+
 public class Produto {
     private String nome;
     private String descricao;
@@ -24,4 +26,5 @@ public class Produto {
         System.out.println("Nome: " + nome + "\nDescrição: " + descricao + "\nPreço Unitário: " + precoUnitario +
                 "\nQuantidade: " + quantidade + "\n");
     }
+
 }
