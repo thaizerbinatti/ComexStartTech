@@ -4,7 +4,7 @@ import modelo.Pedido;
 import  modelo.Cliente;
 import modelo.Produto;
 
-public class TesteProduto {
+public class TestaPedido {
     public static void main(String[] args) {
         Cliente novoCliente = new Cliente();
         novoCliente.nome = "Patricia";
