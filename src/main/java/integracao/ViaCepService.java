@@ -18,6 +18,7 @@ public class ViaCepService {
             String json = response.body();
             return new Gson().fromJson(json, ViaCepResponse.class);
         } catch (Exception e) {
+            System.err.println("CEP inválido! Digite corretamente o número do CEP.");
             throw new RuntimeException(e);
         }
     }
