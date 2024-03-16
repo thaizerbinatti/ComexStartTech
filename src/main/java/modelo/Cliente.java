@@ -10,7 +10,7 @@ public class Cliente extends Endereco {
 
     public void imprimirCliente() {
         System.out.println("Nome: " + nome + "\nCPF: " + cpf + "\nEmail: " + email + "\nProfissão: " + profissao
-        + "\nTelefone: " + telefone + "\nEndereco: " + endereco + "\n");
+                + "\nTelefone: " + telefone + "\nEndereco: " + endereco + "\n");
     }
 
     @Override
@@ -25,3 +25,4 @@ public class Cliente extends Endereco {
                 '}';
     }
 }
+
